@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pikmi Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Сайт для чикуль</h1>
+        <div class="menu">
+            <a href="#main">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#goods">Товары</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+    </div>
+    <div id="main" class="section">
+        <div class="center">
+        <h2>Добро пожаловать!</h2>
+        <p>Здесь я продаю вещи для чикуль</p>
+         <img src="ff.jpg" width="600" alt="">
+        <button onclick="scrollToSection('#goods')">Посмотреть товары</button>
+        </div>
+    </div>
+    <div id="about" class="section">
+        <div class="center">
+        <h2>О нашем магазине</h2>
+        <img src="дабл rr, viperr, double r, дабл ар, вайперр.jpg" width="350" height="350" >
+        <p><b>Работаем с 2025 года</b></p>
+        <p>У нас есть:</p>
+        <ul>
+            <li>Шубы Pikmi</li>
+            <li>Джинсы Pikmi</li>
+            <li>Сумки Pikmi</li>
+            <li>Костюмы Pikmi</li>
+            <li>Свитера Pikmi</li>
+        </ul>
+        </div>
+    </div>
+    <div id="goods" class="section">
+        <h2>Наши товары</h2>
+        <div class="products-container">
+            <div class="product">
+                <h3>Шуба</h3>
+              <img src="Без названия.jpg" width="150" height="150" >
+                <p>Цена: 10000 руб</p>
+                <button class="buy-btn" onclick="addToCart('Шуба', 10000)">Купить</button>
+            </div>
+            <div class="product">
+                <h3>Джинсы</h3>
+                <img src="Women's Casual Pocketed Flared Leg Denim Jeans.jpg"width="150" height="150" >
+                <p>Цена: 5500 руб</p>
+                <button class="buy-btn" onclick="addToCart('Джинсы', 5500)">Купить</button>
+            </div>
+            <div class="product">
+                <h3>Сумка</h3>
+                <img src="rr.jpg" width="150" height="150">
+                <p>Цена: 4000 руб</p>
+                <button class="buy-btn" onclick="addToCart('Сумка', 4000)">Купить</button>
+            </div>
+            <div class="product">
+                <h3>Pikmi фигурка</h3>
+                <img src="пикми тянка.jpg" width="150" height="150">
+                <p>Цена: 2500 рублей</p>
+                <button class="buy-btn" onclick="addToCart('Фигурка', 2500)">Купить</button>
+            </div>
+            <div class="product">
+                <h3>Крутой костюм</h3>
+                  <img src="Gaoin Boys and Girls Spandex Pretty Leopard Costume Kids Animal Bodysuit.jpg" width="150" height="150" >
+                <p>Цена: 2000 руб</p>
+                <button class="buy-btn" onclick="addToCart('Костюм', 2000)">Купить</button>
+            </div>
+            <div class="product">
+                <h3>Свитер</h3>
+                <img src="fghj.jpg" width="150" height="150" >
+                <p>Цена: 1000 руб</p>
+                <button class="buy-btn" onclick="addToCart('Свитер', 1000)">Купить</button>
+            </div>
+        </div>
+        <div class="cart-section">
+            <h3>Корзина</h3>
+            <div id="cart"></div>
+            <p id="total">Итого: 0 руб</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </div>
+    </div>
+    <div id="services" class="section">
+        <h2>Наши услуги</h2>
+        <div class="center">
+       <img src="я пикми 🫦.jpg" width="150" height="150" >
+        </div>
+        <table class="tablee">
+            <tr>
+                <td>Доставка</td>
+                <td>300 руб</td>
+            </tr>
+            <tr>
+                <td>Подарочная упаковка</td>
+                <td>200 руб</td>
+            </tr>
+            <tr>
+                <td>Подарочный сертификат на 500 руб</td>
+                <td>500 руб</td>
+            </tr>
+            <tr>
+                <td>Подарочный сертификат на 1000 руб</td>
+                <td>1000 руб</td>
+            </tr>
+            <tr>
+                <td>Подарочный сертификат на 2000 руб</td>
+                <td>2000 руб</td>
+            </tr>
+        </table>
+    </div>
+    <div id="contacts" class="section">
+        <h2>Контакты</h2>
+        <p><b>Телефон:</b> 8-988-946-60-30</p>
+        <p><b>ВКонтакте:</b> vk.com/pikmishop</p>
+        <p><b>Телеграм:</b> @pikmishop</p>
+        <p><b>Адрес:</b> г. Аксай</p>
+        
+        <h3>Напишите нам:</h3>
+        <form id="contactForm">
+            Имя: <input type="text" id="name" required><br><br>
+            Email: <input type="email" id="email" required><br><br>
+            Сообщение: <br>
+            <textarea id="message" rows="5" cols="40" required></textarea><br><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+    <div class="footer">
+        <p>Pikmi Shop, 2025</p>
+        <p>Все права чикуль защищены</p>
+    </div>    
+</body>
+</html>
